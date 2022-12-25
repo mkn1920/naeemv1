@@ -1,18 +1,16 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import React from "react";
+import styled, { keyframes } from "styled-components";
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import Nav from '../components/nav/nav';
-import Header from '../components/resume/header';
-import ContactDetails from '../components/resume/contact-details';
-import Summary from '../components/resume/summary';
-import KeySkills from '../components/resume/key-skills';
-import Software from '../components/resume/software';
-import WorkHistory from '../components/resume/work-history';
-import Education from '../components/resume/education';
-import Certifications from '../components/resume/certifications';
-import Interests from '../components/resume/interests';
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Nav from "../components/nav/nav";
+import Header from "../components/resume/header";
+import ContactDetails from "../components/resume/contact-details";
+import Summary from "../components/resume/summary";
+import KeySkills from "../components/resume/key-skills";
+import WorkHistory from "../components/resume/work-history";
+import Education from "../components/resume/education";
+import Interests from "../components/resume/interests";
 
 const bgAnimation = keyframes`
 		0% { background-position:0% 13% }
@@ -39,15 +37,15 @@ const ResumeContainer = styled.div`
   gap: 2em;
   grid-auto-flow: row;
   grid-template-areas:
-    'header'
-    'contact-details'
-    'summary'
-    'key-skills'
+    "header"
+    "contact-details"
+    "summary"
+    "key-skills"
     // 'software'
-    'work-history'
-    'education'
+    "work-history"
+    "education"
     // 'certifications'
-    'interests';
+    "interests";
 
   & > * {
     background-color: white;
@@ -75,32 +73,32 @@ const ResumeContainer = styled.div`
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, max-content);
     grid-template-areas:
-      'header contact-details'
-      'summary summary'
-      'key-skills software'
-      'work-history work-history'
-      'education education'
-      'certifications interests';
+      "header contact-details"
+      "summary summary"
+      "key-skills software"
+      "work-history work-history"
+      "education education"
+      "certifications interests";
   }
 
   @media (min-width: 90em) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, max-content);
     grid-template-areas:
-      'header header contact-details contact-details'
-      'summary key-skills key-skills software'
-      'work-history work-history work-history work-history'
-      'education education certifications interests';
+      "header header contact-details contact-details"
+      "summary key-skills key-skills software"
+      "work-history work-history work-history work-history"
+      "education education certifications interests";
   }
 
   @media (min-width: 160em) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-      'header header contact-details contact-details'
-      'summary key-skills key-skills software'
-      'work-history work-history education education'
-      'work-history work-history certifications interests';
+      "header header contact-details contact-details"
+      "summary key-skills key-skills software"
+      "work-history work-history education education"
+      "work-history work-history certifications interests";
   }
 `;
 
@@ -115,10 +113,8 @@ const Resume = () => {
           <ContactDetails />
           <Summary />
           <KeySkills />
-          {/* <Software /> */}
           <WorkHistory />
           <Education />
-          {/* <Certifications /> */}
           <Interests />
         </ResumeContainer>
       </ResumeBody>

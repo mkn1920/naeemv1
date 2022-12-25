@@ -1,11 +1,11 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
+import * as React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import Nav from '../components/nav/nav';
-import Footer from '../components/footer';
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Nav from "../components/nav/nav";
+import Footer from "../components/footer";
 
 const NavStyled = styled.div`
   @media (min-width: 64em) {
@@ -29,9 +29,9 @@ const Content = styled.div`
   display: grid;
   grid-template-columns: auto;
   grid-template-areas:
-    'title'
-    'paragraph'
-    'button';
+    "title"
+    "paragraph"
+    "button";
   gap: 1em;
 
   a {
@@ -89,16 +89,16 @@ const NotFoundPage = () => {
     <Layout>
       <SEO title="Not found" />
       <NavStyled>
-        <Nav siteTitle="<e//y>" color="#99af33" navColor="#99af33" />
+        <Nav siteTitle="<Naeem>" color="#99af33" navColor="#99af33" />
       </NavStyled>
       <Container>
         <Content>
           <Title>Page not found</Title>
           <Paragraph>
-            Sorry{' '}
+            Sorry{" "}
             <span role="img" aria-label="Pensive emoji">
               😔
-            </span>{' '}
+            </span>{" "}
             we couldn’t find what you were looking for.
           </Paragraph>
           <Link to="/">Go home</Link>
