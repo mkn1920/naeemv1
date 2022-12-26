@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import { RiGithubFill, RiLinkedinBoxFill } from "react-icons/ri";
-import { SiPolywork } from "react-icons/si";
 import { BsMailbox2 } from "react-icons/bs";
 import { Spin as Hamburger } from "hamburger-react";
 
@@ -203,9 +202,6 @@ const NavSection = ({ siteTitle, color, navColor }) => {
           <NavLink link="/resume/" navOpen={navOpen} setNavOpen={setNavOpen}>
             Resume
           </NavLink>
-          {/* <NavLink className="project" link="/notes/now" navOpen={navOpen} setNavOpen={setNavOpen}>
-             Now
-          </NavLink> */}
         </ul>
         <ul className="icon-links-list">
           <NavIconLink

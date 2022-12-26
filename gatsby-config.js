@@ -3,7 +3,7 @@ module.exports = {
     siteUrl: "https://www.github.com/mkn1920",
     title: "Naeem",
     description:
-      "This is my own lovely little corner of the internet. Look forward to plenty of interesting ideas & projects.",
+      "This is mylittle corner of the internet. Look forward to plenty of interesting ideas & projects.",
     author: "Mohammad Naeem Naseri",
   },
   flags: {
