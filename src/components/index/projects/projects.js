@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import ProjectsBGWrapper from './projects-bg-wrapper';
-import Card from './card';
+import ProjectsBGWrapper from "./projects-bg-wrapper";
+import Card from "./card";
 
 const ProjectsSection = styled.section`
   position: relative;
@@ -52,10 +52,10 @@ const Projects = ({ data }) => (
       <Content>
         <Heading>Projects</Heading>
         <Cards>
-          {/* {data.projects.edges.map(({ node }) => (
+          {data.projects.edges.map(({ node }) => (
             <Card key={node.frontmatter.id} project={node} />
-          ))} */}
-        Comming Soon
+          ))}
+          Comming Soon
         </Cards>
       </Content>
     </ProjectsBGWrapper>
