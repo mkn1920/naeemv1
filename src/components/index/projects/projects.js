@@ -55,7 +55,6 @@ const Projects = ({ data }) => (
           {data.projects.edges.map(({ node }) => (
             <Card key={node.frontmatter.id} project={node} />
           ))}
-          Comming Soon
         </Cards>
       </Content>
     </ProjectsBGWrapper>
